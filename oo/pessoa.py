@@ -16,3 +16,8 @@ if __name__=='__main__':
     print(luciano.idade)
     for filho in luciano.filhos:
         print(filho.nome)
+    luciano.sobrenome='Ramalho'
+#__dict__apresenta todos os atributos criados no __init__ e os atributos dinâmicos (exemplo sobrenome)
+    del luciano.filhos
+    print(luciano.__dict__)
+    print(renzo.__dict__)
